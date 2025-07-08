@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 雾天图标 -->
+  <path d="M20 30 H80" stroke="#CCCCCC" stroke-width="4" stroke-linecap="round"/>
+  <path d="M30 40 H90" stroke="#CCCCCC" stroke-width="4" stroke-linecap="round"/>
+  <path d="M10 50 H70" stroke="#CCCCCC" stroke-width="4" stroke-linecap="round"/>
+  <path d="M25 60 H85" stroke="#CCCCCC" stroke-width="4" stroke-linecap="round"/>
+  <path d="M15 70 H75" stroke="#CCCCCC" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,12 @@
+<!--pages/city/city.wxml-->
+<view class="container">
+  <view class="search-bar">
+    <input class="search-input" placeholder="输入城市名" value="{{searchVal}}" bindinput="onSearch" />
+  </view>
+
+  <view class="city-list">
+    <view class="city-item" wx:for="{{results}}" wx:key="adcode" data-adcode="{{item.adcode}}" data-city="{{item.name}}" bindtap="selectCity">
+      {{item.name}}
+    </view>
+  </view>
+</view>

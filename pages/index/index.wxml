@@ -1,0 +1,37 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="city" bindtap="toCityPage">{{city}}</view>
+    <view class="date">{{today}}</view>
+  </view>
+
+  <view class="weather-info">
+    <view class="current-weather">
+      <image class="weather-icon" src="{{weather_icon}}"></image>
+      <view class="temperature">{{nowWeather.temperature || weather.casts[0].daytemp}}℃</view>
+      <view class="weather-desc">{{nowWeather.weather || weather.casts[0].dayweather}}</view>
+    </view>
+    <view class="details">
+      <view>风向: {{nowWeather.winddirection || weather.casts[0].daywind}}风</view>
+      <view>风力: {{nowWeather.windpower || weather.casts[0].daypower}}级</view>
+      <view wx:if="{{nowWeather.humidity}}">湿度: {{nowWeather.humidity}}%</view>
+      <view wx:if="{{nowWeather.reporttime}}">更新时间: {{nowWeather.reporttime}}</view>
+    </view>
+  </view>
+
+  <view class="forecast">
+    <view class="forecast-title">未来天气</view>
+    <view class="forecast-list">
+      <view class="forecast-item" wx:for="{{weather.casts}}" wx:key="date">
+        <view>{{item.date}}</view>
+        <image class="weather-icon-small" src="../../static/weather_icon/{{item.dayweather_code || '999'}}.svg"></image>
+        <view>{{item.dayweather}}</view>
+        <view>{{item.daytemp}}℃ / {{item.nighttemp}}℃</view>
+      </view>
+    </view>
+  </view>
+
+  <view wx:if="{{loading}}" class="loading">
+    <text>加载中...</text>
+  </view>
+</view>

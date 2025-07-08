@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 小雨图标 -->
+  <path d="M25 40 A20 20 0 0 1 45 20 A20 20 0 0 1 85 20 A20 20 0 0 1 85 40 Z" fill="#CCCCCC" stroke="#999999" stroke-width="2"/>
+  <!-- 雨滴 -->
+  <path d="M30 60 L35 75" stroke="#4682B4" stroke-width="2" stroke-linecap="round"/>
+  <path d="M50 60 L55 75" stroke="#4682B4" stroke-width="2" stroke-linecap="round"/>
+  <path d="M70 60 L75 75" stroke="#4682B4" stroke-width="2" stroke-linecap="round"/>
+</svg>
